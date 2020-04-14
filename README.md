@@ -20,11 +20,22 @@ This is a boilerplate template bootstrapped and then modified with [Create React
 * `npm start` - starts the react server locally
 * `npm test` - runs all test files
 * `npm run build` - creates a build of the web app for deployment
-* `npm predeploy` - creates a build of the web app for deployment and then runs a server of the build locally
+* `npm run predeploy` - creates a build of the web app for deployment and then runs a server of the build locally
 
 ## Reccomended File Organization
+* Components should be created in `./src/components/`
+* Test files for components should be in `./src/components/__tests__/`
+* CSS styling should be in `./src/styles/`
+* Images, videos, and other loadable assets should be in `./src/assets/`
 
-## Deployment
+## Deployment for Heroku
+1. Install the Heroku CLI using instructions from https://devcenter.heroku.com/articles/heroku-cli 
+2. Create an app on Heroku. You can do this with the Heroku CLI or at https://dashboard.heroku.com/
+3. Edit the settings of the newly created app to include `https://buildpack-registry.s3.amazonaws.com/buildpacks/mars/create-react-app.tgz` as a buildpack. IF THIS IS NOT DONE, THE APP WILL NOT RUN ON HEROKU.
+4. Install the Travis-CI CLI using instructions from https://github.com/travis-ci/travis.rb#readme. This requires installing Ruby Version 1.9.3 or greater (2.0.0 or greater is reccomended).
+5. Setup Travis-CI to automatically build pushed branches.
+6. Edit `.travis.yml`. See the file and https://docs.travis-ci.com/user/customizing-the-build for more details.
+7. Any future pushes to the master branch should automatically trigger a build to Heroku. NOTE: There is currently a bug that may show your build fails due to an incorrect API key. The deployment to Heroku should still trigger regardless, but your build will show as failing, even if every test passed. Also, any email notifications from `.travis.yml` will not trigger. Follow this issue at: https://travis-ci.community/t/heroku-deployment-fails-but-doesnt/8145/
 
 ###### License
 MIT License

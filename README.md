@@ -1,4 +1,4 @@
-# React Boilerplate
+# React Boilerplate [![Build Status](https://travis-ci.org/andrewtyl/react-boilerplate.svg?branch=master)](https://travis-ci.org/andrewtyl/react-boilerplate)
 ## Boilerplate
 This is a boilerplate template bootstrapped and then modified with [Create React App](https://github.com/facebook/create-react-app). The modifications were made to better suit my needs compared to the standard Create React App, and hopefully they suit yours as well.
 

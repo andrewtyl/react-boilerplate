@@ -1,5 +1,6 @@
 {
   "name": "react-template",
+  "description": "A boilerplate for React, modified from Create React App. Please follow instructions in readme before starting project.",
   "version": "0.1.0",
   "author": "Andrew Jessen-Tyler",
   "homepage": "",

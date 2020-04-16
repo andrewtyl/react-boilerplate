@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "description": "A boilerplate for React, modified from Create React App. Please follow instructions in readme before starting project.",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "author": "Andrew Jessen-Tyler",
   "homepage": "",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "react-scripts build ; serve -s build"
+    "predeploy": "npm i --package-lock-only ; react-scripts build ; serve -s build"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +36,7 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-https-redirect": "^1.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "serve": "^11.3.0"

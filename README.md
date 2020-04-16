@@ -21,7 +21,7 @@ This is a boilerplate template bootstrapped and then modified with [Create React
 * `npm start` - starts the react server locally
 * `npm test` - runs all test files
 * `npm run build` - creates a build of the web app for deployment
-* `npm run predeploy` - creates a build of the web app for deployment and then runs a server of the build locally
+* `npm run predeploy` - Updates the package-lock.json to match values on package.json, creates a build of the web app for deployment, and runs a server of the build locally
 
 ## Reccomended File Organization
 * Components should be created in `./src/components/`

@@ -2,6 +2,8 @@
 ## Boilerplate
 This is a boilerplate template bootstrapped and then modified with [Create React App](https://github.com/facebook/create-react-app). The modifications were made to better suit my needs compared to the standard Create React App, and hopefully they suit yours as well.
 
+This boilerplate is setup to use HTTPS and redirect any HTTP requests to HTTPS. This will not show up locally when ran, but should function on Heroku and with Heroku's ACM.
+
 ## Set Up
 1. Open a terminal and `cd` to where you want the new project folder to be.
 2. In terminal, run `git clone https://github.com/andrewtyl/react-boilerplate.git NEW-PROJECT-NAME ; cd NEW-PROJECT-NAME`

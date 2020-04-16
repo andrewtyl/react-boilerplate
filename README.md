@@ -14,7 +14,8 @@ This is a boilerplate template bootstrapped and then modified with [Create React
 9. Edit `LICENSE` to include your name, the year if maintaining an MIT license. Otherwise, replace the `LICENSE` file with your own license.
 10. Edit `name`, `description`, and `repository` in `package.json`
 11. Edit `version`, `author`, `keywords`, and `license` in `package.json` if needed.
-12. Edit this file to include your app's name and description. It is reccomended to keep a backup of this file before altering it and add it to .gitignore or to reference the readme at https://github.com/andrewtyl/react-boilerplate/blob/master/README.md for additional information about Scripts and Deploying.
+12. In terminal, run `npm i --package-lock`. This will automatically update the package-lock.json file to match the edited values from package.json.
+13. Edit this file to include your app's name and description. It is reccomended to keep a backup of this file before altering it and add it to .gitignore or to reference the readme at https://github.com/andrewtyl/react-boilerplate/blob/master/README.md for additional information about Scripts and Deploying.
 
 ## Scripts
 * `npm start` - starts the react server locally

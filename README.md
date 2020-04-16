@@ -36,8 +36,8 @@ This boilerplate is setup to use HTTPS and redirect any HTTP requests to HTTPS. 
 2. Create an app on Heroku. You can do this with the Heroku CLI or at https://dashboard.heroku.com/
 3. Edit the settings of the newly created app to include `https://buildpack-registry.s3.amazonaws.com/buildpacks/mars/create-react-app.tgz` as a buildpack. IF THIS IS NOT DONE, THE APP WILL NOT RUN ON HEROKU.
 4. Install the Travis-CI CLI using instructions from https://github.com/travis-ci/travis.rb#readme. This requires installing Ruby Version 1.9.3 or greater (2.0.0 or greater is reccomended).
-5. Setup Travis-CI to automatically build pushed branches.
-6. Edit `.travis.yml`. See the file and https://docs.travis-ci.com/user/customizing-the-build for more details.
+5. Setup Travis-CI to automatically build pushed branches. Make sure to use travis-ci.com and not .org.
+6. Edit `.travis.yml`. You can get the secure API code by running `travis encrypt $(heroku auth:token) --pro` in terminal. See the file and https://docs.travis-ci.com/user/customizing-the-build for more details.
 7. Any future pushes to the master branch should automatically trigger a build to Heroku. NOTE: There is currently a bug that may show your build fails due to an incorrect API key. The deployment to Heroku should still trigger regardless, but your build will show as failing, even if every test passed. Also, any email notifications from `.travis.yml` will not trigger. Follow this issue at: https://travis-ci.community/t/heroku-deployment-fails-but-doesnt/8145/
 
 ###### License
